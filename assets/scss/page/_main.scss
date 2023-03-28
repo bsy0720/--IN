@@ -35,6 +35,10 @@
   .inner{
     max-width: 800px;
     margin: 0 auto;
+    .video-wrap{
+      position: relative;
+      margin-top: 37px;
+    }
     .title{
       @include tablet{
         margin: 0 245px 30px;
@@ -43,7 +47,7 @@
         height: 120px;
       }
       @include mobile{
-        margin: 0 219px 30px;
+        margin: 0 auto 30px;
       }
       margin: 0 auto 36px;
       background-position: -581px -662px;

@@ -123,13 +123,15 @@ body {
   }
 }
 
-.sp-bg, .sc-info .btn-next, .sc-info .btn-prev, .sc-donation .link-more::after, .sc-donation .edu-title, .sc-donation .donation-title, .sc-expert .btn-next, .sc-expert .btn-prev, .sc-issue .btn-next, .sc-issue .btn-prev, [class*=sc-] .title {
+.sp-bg, .sc-info .btn-next, .sc-info .btn-prev, .sc-donation .link-more::after, .sc-donation .edu-title, .sc-donation .donation-title, .sc-expert .btn-next, .sc-expert .btn-prev, .sc-issue .btn-next, .sc-issue .btn-prev, [class*=sc-] .title,
+.sc-intro .inner .title {
   background-image: url(../images/sp-phrases.png);
   background-size: 1352px 1024px;
   background-repeat: no-repeat;
 }
 @media (max-width: 1024px) {
-  .sp-bg, .sc-info .btn-next, .sc-info .btn-prev, .sc-donation .link-more::after, .sc-donation .edu-title, .sc-donation .donation-title, .sc-expert .btn-next, .sc-expert .btn-prev, .sc-issue .btn-next, .sc-issue .btn-prev, [class*=sc-] .title {
+  .sp-bg, .sc-info .btn-next, .sc-info .btn-prev, .sc-donation .link-more::after, .sc-donation .edu-title, .sc-donation .donation-title, .sc-expert .btn-next, .sc-expert .btn-prev, .sc-issue .btn-next, .sc-issue .btn-prev, [class*=sc-] .title,
+  .sc-intro .inner .title {
     background-image: url(../images/sp-mb.png);
     background-size: 779px 604px;
     background-repeat: no-repeat;
@@ -154,7 +156,7 @@ body {
 }
 
 .sp-ic, .sc-qna .tab-wrap a span {
-  background-image: url(../images/sp-ic.png);
+  background-image: url(/images/sp-ic.png);
   background-size: 370px 70px;
   background-repeat: no-repeat;
 }
@@ -385,6 +387,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+.sc-intro .inner .video-wrap {
+  position: relative;
+  margin-top: 37px;
+}
 .sc-intro .inner .title {
   margin: 0 auto 36px;
   background-position: -581px -662px;
@@ -401,7 +407,7 @@ body {
 }
 @media (max-width: 768px) {
   .sc-intro .inner .title {
-    margin: 0 219px 30px;
+    margin: 0 auto 30px;
   }
 }
 .sc-intro .inner .desc {
