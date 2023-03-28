@@ -24,11 +24,11 @@
 }
 
 .sp-bg{
-  background-image: url(./images/sp-phrases.png);
+  background-image: url(assets/images/sp-phrases.png);
   background-size: 1352px 1024px;
   background-repeat: no-repeat;
   @include tablet{
-    background-image: url(./images/sp-mb.png);
+    background-image: url(assetss/images/sp-mb.png);
     background-size: 779px 604px;
     background-repeat: no-repeat;
   }
@@ -36,7 +36,7 @@
 
 
 .sp-mb{
-  background-image: url(./images/sp-mb.png);
+  background-image: url(assets/images/sp-mb.png);
   background-size: 779px 604px;
   background-repeat: no-repeat;
 }
@@ -46,7 +46,7 @@
 .sc-donation .edu-title,
 .sc-info .title{
   @include tablet{
-    background-image: url(./images/sp-mb2.png);
+    background-image: url(assets/images/sp-mb2.png);
     background-size: 846px 447px;
     background-repeat: no-repeat;
   }
@@ -54,7 +54,7 @@
 
 
 .sp-ic{
-  background-image: url(./images/sp-ic.png);
+  background-image: url(/images/sp-ic.png);
   background-size: 370px 70px;
   background-repeat: no-repeat;
 }
