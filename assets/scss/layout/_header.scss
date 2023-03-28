@@ -1,0 +1,136 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: 64px;
+  z-index: 100;
+ 
+  &.on{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+  &.open{
+    box-shadow: none;
+  }
+  .inner{
+    position: relative;
+    max-width: 1255px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 115px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .logo{
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    a{
+      display: block;
+      width: 115px;
+      height: 52px;
+    }
+  }
+  .btn-wrap{
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+     .btn-share{
+      @extend .sp-mb;
+      width: 36px;
+      height: 36px;
+      background-position: -732px -334px;
+    }
+    .btn-nav{
+      @include tablet{
+        display: flex;
+      }
+      @extend .sp-mb;
+      display: none;
+      margin-left: 12px;
+      background-position: -732px -296px;
+      width: 36px;
+      height: 36px;
+      &.on{
+        @extend .sp-mb;
+        display: flex;
+        background-position: -732px -220px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .nav-list{
+    display: none;
+    &.on{
+      @include tablet{
+        display: none;
+      }
+      display: flex;
+      gap: 60px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-item{
+      a{
+        display: block;
+        color: #222;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: -0.45px;
+        padding: 17px 0 13px 0;
+        border-bottom: 4px solid transparent;
+        position: relative;
+        &.on{
+          color: #00d35d;
+          font-weight: 900;
+          border-bottom-color: #00d35d;
+        }
+      }
+    }
+  }
+  .side-nav{
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: -webkit-calc(100vh - 64px);
+    height: calc(100vh - 64px);
+    background: #fff;
+    &.open{
+      display: block;
+    }
+    .side-list{
+      padding: 74px 47px 0 20px;
+    }
+    .side-item{
+      text-align: left;
+      &+.side-item{
+        margin-top: 32px;
+      }
+      a{
+        color: #222;
+        font-size: 32px;
+        line-height: 35px;
+        font-weight: bold;
+        letter-spacing: -0.64px;
+      }
+    }
+  }
+  .copyright{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    color: #666;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.6px;
+  }
+} //header
+
+

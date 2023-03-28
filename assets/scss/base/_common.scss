@@ -1,0 +1,59 @@
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+  margin: -1px;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+}
+.mb-br{
+  display: none;
+  @include tablet{
+    display: block;
+  }
+}
+
+
+[class*="sc-"] .title{
+  @extend .sp-bg;
+}
+
+.sp-bg{
+  background-image: url(/assets/images/sp-phrases.png);
+  background-size: 1352px 1024px;
+  background-repeat: no-repeat;
+  @include tablet{
+    background-image: url(/assets/images/sp-mb.png);
+    background-size: 779px 604px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.sp-mb{
+  background-image: url(/assets/images/sp-mb.png);
+  background-size: 779px 604px;
+  background-repeat: no-repeat;
+}
+
+.sc-donation .title,
+.sc-donation .donation-title,
+.sc-donation .edu-title,
+.sc-info .title{
+  @include tablet{
+    background-image: url(/assets/images/sp-mb2.png);
+    background-size: 846px 447px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.sp-ic{
+  background-image: url(/assets/images/sp-ic.png);
+  background-size: 370px 70px;
+  background-repeat: no-repeat;
+}
