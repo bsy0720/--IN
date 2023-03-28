@@ -2,11 +2,12 @@ $(function(){
 
   gsap.registerPlugin(ScrollTrigger);
 
-  $('.header .nav-item').click(function(){
-    $('.header .nav-item a').addClass('on').filter().removeClass('on')
+  let green = $('.header .nav-item a');
+  green.click(function(){
+    $(this).addClass('on')
+    green.not($(this)).removeClass("on");
     $('.header .nav-item a').attr('aria-selected',false)
     $(this).find('a').attr('aria-selected',true)
-
   })
 
   let playFlag = true;
@@ -29,7 +30,6 @@ $(function(){
       $('.sc-qna iframe').attr('src','https://tv.naver.com/embed/29460457?autoPlay=true')
       playFlag=false;
     }
-
   });
 
 
@@ -65,15 +65,6 @@ $(function(){
     $('.sc-qna iframe').attr('src',`https://tv.naver.com/embed/${id}?autoPlay=true`)
   })
 
-
-
-/**
- * @서클따라다니게하기
- */
-  $('.sc-qna .tab-wrap a').click(function(e){
-    e.preventDefault();
-
-  })
 
 
   var issueSwiper = new Swiper(".sc-issue .issue-swiper", {

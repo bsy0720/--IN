@@ -18,7 +18,8 @@
 }
 
 
-[class*="sc-"] .title{
+[class*="sc-"] .title,
+.sc-intro .inner .title{
   @extend .sp-bg;
 }
 
