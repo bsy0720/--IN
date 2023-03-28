@@ -196,7 +196,7 @@
             left: -7px;
             width: 114px;
             height: 114px;
-            background: url(/assets/images/circle.png) no-repeat 0 0;
+            background: url(../images/circle.png) no-repeat 0 0;
             background-size: contain;
           }
         }
@@ -664,33 +664,33 @@
       content: '';
     }
     &.expert1::before{
-      background-image: url(/assets/images/answer1.png);
+      background-image: url(../images/answer1.png);
       background-size: contain;
     }
     &.expert2::before{
-      background-image: url(/assets/images/answer2.png);
+      background-image: url(../images/answer2.png);
       background-size: contain;
     }
     &.expert3::before{
-      background-image: url(/assets/images/answer3.png);
+      background-image: url(../images/answer3.png);
       background-size: contain;
     }
     &.expert4::before{
-      background-image: url(/assets/images/answer3.png);
+      background-image: url(../images/answer3.png);
       background-size: contain;
     }
     &.expert5::before{
-      background-image: url(/assets/images/answer4.png);
+      background-image: url(../images/answer4.png);
       background-size: contain;
     }
    
     &.expert6::before{
-      background-image: url(/assets/images/answer5.png);
+      background-image: url(../images/answer5.png);
       background-size: contain;
     }
    
     &.expert7::before{
-      background-image: url(/assets/images/answer6.png);
+      background-image: url(../images/answer6.png);
       background-size: contain;
     }
   }
