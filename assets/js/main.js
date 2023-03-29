@@ -103,17 +103,36 @@ $(function(){
     }
   });
 
-  var infoSwiper = new Swiper(".sc-info .swiper", {
-    slidesPerView: 2,
-    spaceBetween: 48,
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    navigation: {
-      nextEl: ".sc-info .btn-next",
-      prevEl: ".sc-info .btn-prev",
-    },
-  });
+  
+var ww = $(window).width();
+var mySwiper = undefined;
+
+function initSwiper() {
+
+  if (ww >= 1025 && mySwiper == undefined) {
+    mySwiper = new Swiper(".sc-info .swiper", {
+      slidesPerView: 2,
+      spaceBetween: 48,
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      navigation: {
+        nextEl: ".sc-info .btn-next",
+        prevEl: ".sc-info .btn-prev",
+      },
+    });
+  } else if (ww < 1025 && mySwiper != undefined) {
+    mySwiper.destroy();
+    mySwiper = undefined;
+  }
+}
+
+initSwiper();
+
+$(window).on('resize', function () {
+  ww = $(window).width();
+  initSwiper();
+});
 
 
 
