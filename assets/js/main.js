@@ -136,8 +136,6 @@ $(window).on('resize', function () {
 
 
 
-
-
   /**
    * @숫자카운트
    */

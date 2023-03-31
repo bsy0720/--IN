@@ -376,6 +376,9 @@
       transform: translate3d(-5px, 0, 43px) rotateY(-21deg) !important;
       &+.swiper-slide-visible{
         transform: translate3d(-64px, 0, 220px) rotateY(-48deg);
+        &+.swiper-slide-visible{
+          transform: translate3d(-200px, 0, 480px) rotateY(-66deg);
+        }
       }
     }
     a{
@@ -505,17 +508,18 @@
       vertical-align: top;
     }
   }
+  .swiper-slide-prev{
+    transform: translate3d(6px, 0, 43px) rotateY(21deg) !important;
+  }
   .swiper-slide-visible{
     @include tablet{
       transition-duration: 0ms;
-      transform: translate3d(40px, 0px, 120px) rotateX(0deg) rotateY(55deg) scale(1);
+      transform: translate3d(64px, 0, 220px) rotateY(48deg) !important;
       z-index: 0;
     }
     transform: translate3d(64px, 0, 220px) rotateY(48deg);
-    &+.swiper-slide-visible{
-      transform: translate3d(6px, 0, 43px) rotateY(21deg);
-    }
   }
+
   .swiper-slide-active{
     transform: translate3d(0px, 0, 0px) rotateY(0deg) !important;
   }
@@ -615,6 +619,9 @@
       transform: translate3d(-5px, 0, 43px) rotateY(-21deg) !important;
       &+.swiper-slide-visible{
         transform: translate3d(-64px, 0, 220px) rotateY(-48deg) !important;
+        &+.swiper-slide-visible{
+          transform: translate3d(-200px, 0, 480px) rotateY(-66deg) !important;
+        }
       }
     }
   }
